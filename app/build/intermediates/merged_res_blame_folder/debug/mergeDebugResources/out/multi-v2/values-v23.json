@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.edupulse.app-mergeDebugResources-41:/values-v23/values-v23.xml",
+            "outputFile": "com.edupulse.app-mergeDebugResources-42:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "C:\\Users\\TradeOne\\.gradle\\caches\\8.9\\transforms\\6686a20c7c8bc378b96eda11506c15cc\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",

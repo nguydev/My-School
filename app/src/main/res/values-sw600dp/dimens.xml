@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tablet / Foldable Padding & Margins -->
+    <dimen name="spacing_md">24dp</dimen>
+    <dimen name="spacing_lg">36dp</dimen>
+    <dimen name="spacing_xl">48dp</dimen>
+    <dimen name="spacing_xxl">64dp</dimen>
+
+    <!-- Corner Radii -->
+    <dimen name="radius_card">28dp</dimen>
+    <dimen name="radius_input">16dp</dimen>
+    <dimen name="radius_button">16dp</dimen>
+
+    <!-- Dimensions -->
+    <dimen name="button_height">58dp</dimen>
+    <dimen name="input_height">58dp</dimen>
+    <dimen name="avatar_size_lg">100dp</dimen>
+</resources>

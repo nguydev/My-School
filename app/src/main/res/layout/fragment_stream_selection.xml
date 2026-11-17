@@ -1,75 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
     android:background="@drawable/bg_dark_cyber_gradient">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavContainer"
+        android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingHorizontal="16dp"
-        android:paddingTop="36dp"
-        android:paddingBottom="32dp">
+        android:paddingTop="28dp"
+        android:paddingBottom="24dp">
 
-        <!-- Top App Bar -->
-        <RelativeLayout
+        <!-- Top App Bar in Card Container (Scrollable with page) -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="#101827"
+            app:strokeColor="@color/cyan_neon"
+            app:strokeWidth="1dp">
 
-            <ImageButton
-                android:id="@+id/btnBack"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:src="@drawable/ic_arrow_back"
-                android:contentDescription="Back"
-                app:tint="@color/text_primary" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:paddingHorizontal="12dp"
+                android:gravity="center_vertical">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_arrow_back"
+                    android:contentDescription="Back"
+                    app:tint="@color/text_primary" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:gravity="end"
-                    android:orientation="vertical">
+                    android:layout_toEndOf="@id/btnBack"
+                    android:layout_marginStart="8dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="26dp"
+                        android:layout_height="26dp"
+                        android:background="@drawable/bg_icon_container_glow"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_graduation_cap"
+                        app:tint="@color/cyan_neon" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Co"
+                        android:layout_marginStart="8dp"
+                        android:text="Apex Coaching Academy"
                         android:textColor="@color/text_primary"
-                        android:textSize="12sp"
+                        android:textSize="13sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ape"
-                        android:textColor="@color/text_tertiary"
-                        android:textSize="10sp" />
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/ic_verified"
+                        app:tint="@color/cyan_neon" />
                 </LinearLayout>
 
                 <ImageView
+                    android:id="@+id/ivUserProfileTop"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
                     android:background="@drawable/bg_icon_container_glow"
                     android:padding="6dp"
                     android:src="@drawable/ic_user"
                     app:tint="@color/text_primary" />
-            </LinearLayout>
-        </RelativeLayout>
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
 
         <!-- Header Card: Choose your academic stream -->
         <com.google.android.material.card.MaterialCardView
@@ -269,10 +293,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             app:cardCornerRadius="20dp"
-            app:cardElevation="4dp"
+            app:cardElevation="6dp"
             app:cardBackgroundColor="@color/bg_card"
-            app:strokeColor="@color/border_card"
-            app:strokeWidth="1dp">
+            app:strokeColor="@color/cyan_neon"
+            app:strokeWidth="1.5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -412,10 +436,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             app:cardCornerRadius="20dp"
-            app:cardElevation="4dp"
+            app:cardElevation="6dp"
             app:cardBackgroundColor="@color/bg_card"
-            app:strokeColor="@color/border_card"
-            app:strokeWidth="1dp">
+            app:strokeColor="@color/cyan_neon"
+            app:strokeWidth="1.5dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -573,6 +597,16 @@
                 android:textColor="@color/text_secondary"
                 android:textSize="11sp" />
         </LinearLayout>
-
     </LinearLayout>
-</androidx.core.widget.NestedScrollView>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Fixed Global Bottom Navigation Bar -->
+    <FrameLayout
+        android:id="@+id/bottomNavContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/layout_bottom_nav_bar" />
+    </FrameLayout>
+
+</RelativeLayout>

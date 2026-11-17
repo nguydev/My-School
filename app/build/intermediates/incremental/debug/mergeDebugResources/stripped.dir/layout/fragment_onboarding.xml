@@ -7,51 +7,66 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_dark_cyber_gradient">
 
-    <!-- Top Bar: Logo + Brand + Skip -->
-    <RelativeLayout
+    <!-- Top Navigation Bar: Premium Card with Logo, Brand & Prominent Skip -->
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/topBarOnboarding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingHorizontal="24dp"
-        android:paddingTop="36dp"
-        android:paddingBottom="12dp">
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#0D182B"
+        app:strokeColor="#1E3354"
+        app:strokeWidth="1dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingHorizontal="16dp">
 
-            <ImageView
-                android:layout_width="32dp"
-                android:layout_height="32dp"
-                android:background="@drawable/bg_icon_container_glow"
-                android:padding="6dp"
-                android:src="@drawable/ic_graduation_cap"
-                app:tint="@color/cyan_neon" />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Mentor"
-                android:textColor="@color/text_primary"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_alignParentStart="true">
 
-        <TextView
-            android:id="@+id/tvSkipOnboarding"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:padding="8dp"
-            android:text="Skip"
-            android:textColor="@color/text_secondary"
-            android:textSize="14sp" />
-    </RelativeLayout>
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/bg_icon_container_glow"
+                    android:padding="7dp"
+                    android:src="@drawable/ic_graduation_cap"
+                    app:tint="@color/cyan_neon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Mentor"
+                    android:textColor="@color/text_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Prominent, Clear & Larger Skip Button -->
+            <TextView
+                android:id="@+id/tvSkipOnboarding"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_badge_pill"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:text="Skip ➔"
+                android:textColor="@color/cyan_neon"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
 
     <!-- Scrollable Body Content -->
     <androidx.core.widget.NestedScrollView
@@ -315,17 +330,18 @@
                 android:textSize="11sp"
                 android:textStyle="bold" />
 
-            <!-- Main Heading -->
+            <!-- Main Heading with balanced spacing -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="18dp"
                 android:gravity="center"
+                android:paddingHorizontal="10dp"
                 android:text="Master Every Subject with Elite Mentors"
                 android:textColor="@color/text_primary"
-                android:textSize="22sp"
+                android:textSize="23sp"
                 android:textStyle="bold"
-                android:lineSpacingExtra="3dp" />
+                android:lineSpacingExtra="4dp" />
 
             <!-- Subtitle -->
             <TextView

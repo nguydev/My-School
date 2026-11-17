@@ -74,6 +74,7 @@ drawable bg_icon_container_glow
 drawable bg_input_field
 drawable bg_input_focused
 drawable bg_input_selector
+drawable bg_nav_active_glow
 drawable bg_neon_button
 drawable bg_neon_button_pressed
 drawable bg_neon_button_selector
@@ -101,6 +102,7 @@ drawable ic_clock
 drawable ic_copy
 drawable ic_dashboard
 drawable ic_download
+drawable ic_empty_box
 drawable ic_eye
 drawable ic_eye_off
 drawable ic_file_document
@@ -410,6 +412,7 @@ id etSearchStore
 id etStudentRoll
 id etSubject
 id fabScreenSwitcher
+id fixedTopNavBar
 id headerTitleContainer
 id homeFragment
 id homeScrollView
@@ -484,7 +487,11 @@ id ivSearchInputIcon
 id ivShareTop
 id ivThumbSummary
 id ivUploadedPhoto
+id layoutAlertsContent
+id layoutEmptyAlerts
+id layoutEmptySaved
 id layoutPhotoUpload
+id layoutSavedContent
 id lblFullName
 id lblSchoolName
 id lblStep2
@@ -533,6 +540,9 @@ id statusBanner
 id stepProgressBar
 id streamSelectionFragment
 id subHeaderBar
+id swipeRefreshAlerts
+id swipeRefreshHome
+id swipeRefreshSaved
 id switchDarkTheme
 id switchRememberDevice
 id tabAllBooks

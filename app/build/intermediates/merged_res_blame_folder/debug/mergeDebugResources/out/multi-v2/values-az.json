@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.edupulse.app-mergeDebugResources-41:/values-az/values-az.xml",
+            "outputFile": "com.edupulse.app-mergeDebugResources-42:/values-az/values-az.xml",
             "map": [
                 {
                     "source": "C:\\Users\\TradeOne\\.gradle\\caches\\8.9\\transforms\\1dc0a72c738f7e581227791ecdfb8441\\transformed\\material-1.11.0\\res\\values-az\\values-az.xml",

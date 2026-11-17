@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.edupulse.app.R;
@@ -83,6 +84,12 @@ public final class FragmentAlertsBinding implements ViewBinding {
   public final ImageView ivProfileTop;
 
   @NonNull
+  public final LinearLayout layoutAlertsContent;
+
+  @NonNull
+  public final LinearLayout layoutEmptyAlerts;
+
+  @NonNull
   public final LinearLayout navItemAlerts;
 
   @NonNull
@@ -96,6 +103,9 @@ public final class FragmentAlertsBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout navItemSaved;
+
+  @NonNull
+  public final SwipeRefreshLayout swipeRefreshAlerts;
 
   @NonNull
   public final RelativeLayout topBarAlerts;
@@ -113,10 +123,12 @@ public final class FragmentAlertsBinding implements ViewBinding {
       @NonNull MaterialCardView cardMilestoneUnlocked, @NonNull MaterialCardView cardMockTestLive,
       @NonNull MaterialCardView cardScheduleFinalized, @NonNull ImageView ivArrowManage,
       @NonNull ImageView ivHeaderIcon, @NonNull ImageView ivManageIcon,
-      @NonNull ImageView ivProfileTop, @NonNull LinearLayout navItemAlerts,
+      @NonNull ImageView ivProfileTop, @NonNull LinearLayout layoutAlertsContent,
+      @NonNull LinearLayout layoutEmptyAlerts, @NonNull LinearLayout navItemAlerts,
       @NonNull LinearLayout navItemCourses, @NonNull LinearLayout navItemHome,
       @NonNull LinearLayout navItemProfile, @NonNull LinearLayout navItemSaved,
-      @NonNull RelativeLayout topBarAlerts, @NonNull TextView tvTodayNewBadge) {
+      @NonNull SwipeRefreshLayout swipeRefreshAlerts, @NonNull RelativeLayout topBarAlerts,
+      @NonNull TextView tvTodayNewBadge) {
     this.rootView = rootView;
     this.alertsScrollView = alertsScrollView;
     this.bottomNavBar = bottomNavBar;
@@ -137,11 +149,14 @@ public final class FragmentAlertsBinding implements ViewBinding {
     this.ivHeaderIcon = ivHeaderIcon;
     this.ivManageIcon = ivManageIcon;
     this.ivProfileTop = ivProfileTop;
+    this.layoutAlertsContent = layoutAlertsContent;
+    this.layoutEmptyAlerts = layoutEmptyAlerts;
     this.navItemAlerts = navItemAlerts;
     this.navItemCourses = navItemCourses;
     this.navItemHome = navItemHome;
     this.navItemProfile = navItemProfile;
     this.navItemSaved = navItemSaved;
+    this.swipeRefreshAlerts = swipeRefreshAlerts;
     this.topBarAlerts = topBarAlerts;
     this.tvTodayNewBadge = tvTodayNewBadge;
   }
@@ -287,6 +302,18 @@ public final class FragmentAlertsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.layoutAlertsContent;
+      LinearLayout layoutAlertsContent = ViewBindings.findChildViewById(rootView, id);
+      if (layoutAlertsContent == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutEmptyAlerts;
+      LinearLayout layoutEmptyAlerts = ViewBindings.findChildViewById(rootView, id);
+      if (layoutEmptyAlerts == null) {
+        break missingId;
+      }
+
       id = R.id.navItemAlerts;
       LinearLayout navItemAlerts = ViewBindings.findChildViewById(rootView, id);
       if (navItemAlerts == null) {
@@ -317,6 +344,12 @@ public final class FragmentAlertsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.swipeRefreshAlerts;
+      SwipeRefreshLayout swipeRefreshAlerts = ViewBindings.findChildViewById(rootView, id);
+      if (swipeRefreshAlerts == null) {
+        break missingId;
+      }
+
       id = R.id.topBarAlerts;
       RelativeLayout topBarAlerts = ViewBindings.findChildViewById(rootView, id);
       if (topBarAlerts == null) {
@@ -333,8 +366,9 @@ public final class FragmentAlertsBinding implements ViewBinding {
           btnDownloadNotes, btnDownloadRoutine, btnMarkRead, btnSearchAlerts, btnTakeTest,
           btnViewFullReply, btnViewNotes, cardDoubtReply, cardHigherMathSheet, cardManageAlerts,
           cardMilestoneUnlocked, cardMockTestLive, cardScheduleFinalized, ivArrowManage,
-          ivHeaderIcon, ivManageIcon, ivProfileTop, navItemAlerts, navItemCourses, navItemHome,
-          navItemProfile, navItemSaved, topBarAlerts, tvTodayNewBadge);
+          ivHeaderIcon, ivManageIcon, ivProfileTop, layoutAlertsContent, layoutEmptyAlerts,
+          navItemAlerts, navItemCourses, navItemHome, navItemProfile, navItemSaved,
+          swipeRefreshAlerts, topBarAlerts, tvTodayNewBadge);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

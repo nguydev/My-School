@@ -52,12 +52,30 @@ public class AlertsFragment extends Fragment {
         );
 
         setupClickListeners(view);
+        setupPullToRefresh();
+    }
+
+    private void setupPullToRefresh() {
+        binding.swipeRefreshAlerts.setColorSchemeResources(R.color.cyan_neon, R.color.blue_electric);
+        binding.swipeRefreshAlerts.setProgressBackgroundColorSchemeResource(R.color.bg_card);
+        binding.swipeRefreshAlerts.setOnRefreshListener(() -> {
+            binding.swipeRefreshAlerts.postDelayed(() -> {
+                if (binding != null) {
+                    binding.swipeRefreshAlerts.setRefreshing(false);
+                    binding.layoutEmptyAlerts.setVisibility(View.GONE);
+                    binding.layoutAlertsContent.setVisibility(View.VISIBLE);
+                    Toast.makeText(requireContext(), "All alerts synchronized! ✔", Toast.LENGTH_SHORT).show();
+                }
+            }, 800);
+        });
     }
 
     private void setupClickListeners(View rootView) {
         // Mark all as read
         binding.btnMarkRead.setOnClickListener(v -> {
             binding.tvTodayNewBadge.setVisibility(View.GONE);
+            binding.layoutAlertsContent.setVisibility(View.GONE);
+            binding.layoutEmptyAlerts.setVisibility(View.VISIBLE);
             Toast.makeText(requireContext(), "All notifications marked as read! ✔", Toast.LENGTH_SHORT).show();
         });
 

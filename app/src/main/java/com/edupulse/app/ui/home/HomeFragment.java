@@ -47,6 +47,20 @@ public class HomeFragment extends Fragment {
         );
 
         setupClickListeners(view);
+        setupPullToRefresh();
+    }
+
+    private void setupPullToRefresh() {
+        binding.swipeRefreshHome.setColorSchemeResources(R.color.cyan_neon, R.color.blue_electric);
+        binding.swipeRefreshHome.setProgressBackgroundColorSchemeResource(R.color.bg_card);
+        binding.swipeRefreshHome.setOnRefreshListener(() -> {
+            binding.swipeRefreshHome.postDelayed(() -> {
+                if (binding != null) {
+                    binding.swipeRefreshHome.setRefreshing(false);
+                    Toast.makeText(requireContext(), "Home Feed Updated! ✨", Toast.LENGTH_SHORT).show();
+                }
+            }, 1000);
+        });
     }
 
     private void setupClickListeners(View rootView) {

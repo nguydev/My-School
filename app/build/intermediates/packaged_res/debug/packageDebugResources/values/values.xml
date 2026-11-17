@@ -164,6 +164,8 @@
         <item name="android:statusBarColor">@color/bg_screen</item>
         <item name="android:navigationBarColor">@color/bg_screen</item>
         <item name="android:windowLightStatusBar" ns1:targetApi="m">false</item>
+        <item name="android:windowLightNavigationBar" ns1:targetApi="o_mr1">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
 
         
         <item name="textAppearanceHeadlineLarge">@style/TextAppearance.EduPulse.Headline</item>

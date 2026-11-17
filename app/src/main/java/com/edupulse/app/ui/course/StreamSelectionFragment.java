@@ -12,6 +12,7 @@ import androidx.navigation.Navigation;
 
 import com.edupulse.app.R;
 import com.edupulse.app.databinding.FragmentStreamSelectionBinding;
+import com.edupulse.app.ui.common.BottomNavHelper;
 import com.edupulse.app.ui.common.ViewAnimationUtils;
 
 public class StreamSelectionFragment extends Fragment {
@@ -41,6 +42,7 @@ public class StreamSelectionFragment extends Fragment {
         );
 
         setupClickListeners(view);
+        BottomNavHelper.setupBottomNav(view, BottomNavHelper.ActiveTab.COURSES);
     }
 
     private void setupClickListeners(View rootView) {

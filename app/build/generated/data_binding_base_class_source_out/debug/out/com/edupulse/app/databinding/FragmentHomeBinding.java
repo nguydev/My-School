@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.edupulse.app.R;
@@ -63,6 +64,9 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final MaterialCardView cardWelcomeBottom;
 
   @NonNull
+  public final MaterialCardView fixedTopNavBar;
+
+  @NonNull
   public final NestedScrollView homeScrollView;
 
   @NonNull
@@ -81,13 +85,16 @@ public final class FragmentHomeBinding implements ViewBinding {
   public final LinearLayout navItemCourses;
 
   @NonNull
-  public final LinearLayout navItemHome;
+  public final FrameLayout navItemHome;
 
   @NonNull
   public final LinearLayout navItemProfile;
 
   @NonNull
   public final LinearLayout navItemSaved;
+
+  @NonNull
+  public final SwipeRefreshLayout swipeRefreshHome;
 
   @NonNull
   public final TextView tvViewAllCourses;
@@ -98,11 +105,12 @@ public final class FragmentHomeBinding implements ViewBinding {
       @NonNull TextView btnViewWelcome, @NonNull MaterialCardView cardBookStoreBanner,
       @NonNull MaterialCardView cardCourse1, @NonNull MaterialCardView cardCourse2,
       @NonNull MaterialCardView cardHeroStudent, @NonNull MaterialCardView cardResume,
-      @NonNull MaterialCardView cardWelcomeBottom, @NonNull NestedScrollView homeScrollView,
-      @NonNull FrameLayout iconWelcome, @NonNull ImageView ivBookBannerIcon,
-      @NonNull ImageView ivProfileAvatar, @NonNull LinearLayout navItemAlerts,
-      @NonNull LinearLayout navItemCourses, @NonNull LinearLayout navItemHome,
-      @NonNull LinearLayout navItemProfile, @NonNull LinearLayout navItemSaved,
+      @NonNull MaterialCardView cardWelcomeBottom, @NonNull MaterialCardView fixedTopNavBar,
+      @NonNull NestedScrollView homeScrollView, @NonNull FrameLayout iconWelcome,
+      @NonNull ImageView ivBookBannerIcon, @NonNull ImageView ivProfileAvatar,
+      @NonNull LinearLayout navItemAlerts, @NonNull LinearLayout navItemCourses,
+      @NonNull FrameLayout navItemHome, @NonNull LinearLayout navItemProfile,
+      @NonNull LinearLayout navItemSaved, @NonNull SwipeRefreshLayout swipeRefreshHome,
       @NonNull TextView tvViewAllCourses) {
     this.rootView = rootView;
     this.bottomNavBar = bottomNavBar;
@@ -117,6 +125,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.cardHeroStudent = cardHeroStudent;
     this.cardResume = cardResume;
     this.cardWelcomeBottom = cardWelcomeBottom;
+    this.fixedTopNavBar = fixedTopNavBar;
     this.homeScrollView = homeScrollView;
     this.iconWelcome = iconWelcome;
     this.ivBookBannerIcon = ivBookBannerIcon;
@@ -126,6 +135,7 @@ public final class FragmentHomeBinding implements ViewBinding {
     this.navItemHome = navItemHome;
     this.navItemProfile = navItemProfile;
     this.navItemSaved = navItemSaved;
+    this.swipeRefreshHome = swipeRefreshHome;
     this.tvViewAllCourses = tvViewAllCourses;
   }
 
@@ -228,6 +238,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fixedTopNavBar;
+      MaterialCardView fixedTopNavBar = ViewBindings.findChildViewById(rootView, id);
+      if (fixedTopNavBar == null) {
+        break missingId;
+      }
+
       id = R.id.homeScrollView;
       NestedScrollView homeScrollView = ViewBindings.findChildViewById(rootView, id);
       if (homeScrollView == null) {
@@ -265,7 +281,7 @@ public final class FragmentHomeBinding implements ViewBinding {
       }
 
       id = R.id.navItemHome;
-      LinearLayout navItemHome = ViewBindings.findChildViewById(rootView, id);
+      FrameLayout navItemHome = ViewBindings.findChildViewById(rootView, id);
       if (navItemHome == null) {
         break missingId;
       }
@@ -282,6 +298,12 @@ public final class FragmentHomeBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.swipeRefreshHome;
+      SwipeRefreshLayout swipeRefreshHome = ViewBindings.findChildViewById(rootView, id);
+      if (swipeRefreshHome == null) {
+        break missingId;
+      }
+
       id = R.id.tvViewAllCourses;
       TextView tvViewAllCourses = ViewBindings.findChildViewById(rootView, id);
       if (tvViewAllCourses == null) {
@@ -290,9 +312,10 @@ public final class FragmentHomeBinding implements ViewBinding {
 
       return new FragmentHomeBinding((RelativeLayout) rootView, bottomNavBar, btnExploreCourse1,
           btnExploreCourse2, btnNotification, btnResumePlay, btnViewWelcome, cardBookStoreBanner,
-          cardCourse1, cardCourse2, cardHeroStudent, cardResume, cardWelcomeBottom, homeScrollView,
-          iconWelcome, ivBookBannerIcon, ivProfileAvatar, navItemAlerts, navItemCourses,
-          navItemHome, navItemProfile, navItemSaved, tvViewAllCourses);
+          cardCourse1, cardCourse2, cardHeroStudent, cardResume, cardWelcomeBottom, fixedTopNavBar,
+          homeScrollView, iconWelcome, ivBookBannerIcon, ivProfileAvatar, navItemAlerts,
+          navItemCourses, navItemHome, navItemProfile, navItemSaved, swipeRefreshHome,
+          tvViewAllCourses);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -2,8 +2,10 @@ package com.edupulse.app.ui.auth;
 
 import android.os.Bundle;
 import android.widget.Toast;
+import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowCompat;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -16,10 +18,12 @@ public class AuthActivity extends AppCompatActivity {
     private ActivityAuthBinding binding;
     private NavController navController;
     private AuthViewModel authViewModel;
+    private long backPressedTime = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         binding = ActivityAuthBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -31,8 +35,42 @@ public class AuthActivity extends AppCompatActivity {
             navController = navHostFragment.getNavController();
         }
 
+        setupBackPressHandling();
         setupQuickScreenSwitcher();
         observeEvents();
+    }
+
+    /**
+     * Production Grade double-tap back to exit on root screens
+     */
+    private void setupBackPressHandling() {
+        getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                if (navController != null) {
+                    int currentDestination = navController.getCurrentDestination() != null ?
+                            navController.getCurrentDestination().getId() : 0;
+
+                    // If user is on Root/Home/Onboarding page, require double-tap to exit
+                    if (currentDestination == R.id.homeFragment || currentDestination == R.id.onboardingFragment) {
+                        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+                            finish();
+                        } else {
+                            Toast.makeText(AuthActivity.this, "Press back again to exit", Toast.LENGTH_SHORT).show();
+                            backPressedTime = System.currentTimeMillis();
+                        }
+                        return;
+                    }
+
+                    // Otherwise navigate up in backstack
+                    if (!navController.navigateUp()) {
+                        finish();
+                    }
+                } else {
+                    finish();
+                }
+            }
+        });
     }
 
     private void observeEvents() {

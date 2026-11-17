@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.edupulse.app-mergeDebugResources-41:/values-en-rIN/values-en-rIN.xml",
+            "outputFile": "com.edupulse.app-mergeDebugResources-42:/values-en-rIN/values-en-rIN.xml",
             "map": [
                 {
                     "source": "C:\\Users\\TradeOne\\.gradle\\caches\\8.9\\transforms\\08ab6b09e123053fcc605170d6e5cc0a\\transformed\\core-1.9.0\\res\\values-en-rIN\\values-en-rIN.xml",

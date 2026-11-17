@@ -62,22 +62,32 @@ public class BookOrderFragment extends Fragment {
             }
         });
 
+        ViewAnimationUtils.hideKeyboardOnTouchOutside(view, requireActivity());
+
         // Confirm Order Validation
         binding.btnConfirmOrder.setOnClickListener(v -> {
+            ViewAnimationUtils.hideKeyboard(requireActivity());
             String name = binding.etRecipientName.getText().toString().trim();
             String phone = binding.etContactPhone.getText().toString().trim();
             String address = binding.etDeliveryAddress.getText().toString().trim();
 
             if (TextUtils.isEmpty(name)) {
                 binding.etRecipientName.setError("Full Name is required");
+                binding.etRecipientName.requestFocus();
                 return;
             }
-            if (TextUtils.isEmpty(phone)) {
-                binding.etContactPhone.setError("Phone number is required");
+
+            // BD Mobile Number Regex Validation (+8801... or 01...)
+            String cleanPhone = phone.replaceAll("[\\s\\-\\(\\)]", "");
+            if (!cleanPhone.matches("^(?:\\+?880|0)?1[3-9]\\d{8}$")) {
+                binding.etContactPhone.setError("Please enter a valid 11-digit BD mobile number");
+                binding.etContactPhone.requestFocus();
                 return;
             }
-            if (TextUtils.isEmpty(address)) {
-                binding.etDeliveryAddress.setError("Delivery address is required");
+
+            if (TextUtils.isEmpty(address) || address.length() < 10) {
+                binding.etDeliveryAddress.setError("Please enter complete delivery address (Min 10 characters)");
+                binding.etDeliveryAddress.requestFocus();
                 return;
             }
 

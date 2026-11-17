@@ -13,6 +13,7 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.edupulse.app.R;
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -28,7 +29,7 @@ public final class FragmentOnboardingBinding implements ViewBinding {
   public final MaterialButton btnStartLearningNow;
 
   @NonNull
-  public final RelativeLayout topBarOnboarding;
+  public final MaterialCardView topBarOnboarding;
 
   @NonNull
   public final TextView tvSignInLink;
@@ -38,7 +39,7 @@ public final class FragmentOnboardingBinding implements ViewBinding {
 
   private FragmentOnboardingBinding(@NonNull RelativeLayout rootView,
       @NonNull LinearLayout bottomActionLayout, @NonNull MaterialButton btnStartLearningNow,
-      @NonNull RelativeLayout topBarOnboarding, @NonNull TextView tvSignInLink,
+      @NonNull MaterialCardView topBarOnboarding, @NonNull TextView tvSignInLink,
       @NonNull TextView tvSkipOnboarding) {
     this.rootView = rootView;
     this.bottomActionLayout = bottomActionLayout;
@@ -88,7 +89,7 @@ public final class FragmentOnboardingBinding implements ViewBinding {
       }
 
       id = R.id.topBarOnboarding;
-      RelativeLayout topBarOnboarding = ViewBindings.findChildViewById(rootView, id);
+      MaterialCardView topBarOnboarding = ViewBindings.findChildViewById(rootView, id);
       if (topBarOnboarding == null) {
         break missingId;
       }

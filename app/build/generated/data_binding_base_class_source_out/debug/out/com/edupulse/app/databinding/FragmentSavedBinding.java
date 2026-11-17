@@ -13,6 +13,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.widget.NestedScrollView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.edupulse.app.R;
@@ -120,6 +121,12 @@ public final class FragmentSavedBinding implements ViewBinding {
   public final ImageView ivSearchInputIcon;
 
   @NonNull
+  public final LinearLayout layoutEmptySaved;
+
+  @NonNull
+  public final LinearLayout layoutSavedContent;
+
+  @NonNull
   public final LinearLayout navItemAlerts;
 
   @NonNull
@@ -136,6 +143,9 @@ public final class FragmentSavedBinding implements ViewBinding {
 
   @NonNull
   public final NestedScrollView savedScrollView;
+
+  @NonNull
+  public final SwipeRefreshLayout swipeRefreshSaved;
 
   @NonNull
   public final TextView tabAllSaved;
@@ -173,13 +183,14 @@ public final class FragmentSavedBinding implements ViewBinding {
       @NonNull ImageView ivFilterIcon, @NonNull ImageView ivMenu1, @NonNull ImageView ivMenu3,
       @NonNull ImageView ivPdfIcon1, @NonNull ImageView ivPdfIcon2, @NonNull ImageView ivPdfIcon3,
       @NonNull ImageView ivProfileTopSaved, @NonNull ImageView ivSearchInputIcon,
+      @NonNull LinearLayout layoutEmptySaved, @NonNull LinearLayout layoutSavedContent,
       @NonNull LinearLayout navItemAlerts, @NonNull LinearLayout navItemCourses,
       @NonNull LinearLayout navItemHome, @NonNull LinearLayout navItemProfile,
       @NonNull LinearLayout navItemSaved, @NonNull NestedScrollView savedScrollView,
-      @NonNull TextView tabAllSaved, @NonNull TextView tabOfflinePdfs,
-      @NonNull TextView tabSavedVideos, @NonNull RelativeLayout thumb1,
-      @NonNull RelativeLayout thumb2, @NonNull RelativeLayout thumb3,
-      @NonNull RelativeLayout topBarSaved) {
+      @NonNull SwipeRefreshLayout swipeRefreshSaved, @NonNull TextView tabAllSaved,
+      @NonNull TextView tabOfflinePdfs, @NonNull TextView tabSavedVideos,
+      @NonNull RelativeLayout thumb1, @NonNull RelativeLayout thumb2,
+      @NonNull RelativeLayout thumb3, @NonNull RelativeLayout topBarSaved) {
     this.rootView = rootView;
     this.bottomNavBar = bottomNavBar;
     this.btnDownloadAll = btnDownloadAll;
@@ -212,12 +223,15 @@ public final class FragmentSavedBinding implements ViewBinding {
     this.ivPdfIcon3 = ivPdfIcon3;
     this.ivProfileTopSaved = ivProfileTopSaved;
     this.ivSearchInputIcon = ivSearchInputIcon;
+    this.layoutEmptySaved = layoutEmptySaved;
+    this.layoutSavedContent = layoutSavedContent;
     this.navItemAlerts = navItemAlerts;
     this.navItemCourses = navItemCourses;
     this.navItemHome = navItemHome;
     this.navItemProfile = navItemProfile;
     this.navItemSaved = navItemSaved;
     this.savedScrollView = savedScrollView;
+    this.swipeRefreshSaved = swipeRefreshSaved;
     this.tabAllSaved = tabAllSaved;
     this.tabOfflinePdfs = tabOfflinePdfs;
     this.tabSavedVideos = tabSavedVideos;
@@ -440,6 +454,18 @@ public final class FragmentSavedBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.layoutEmptySaved;
+      LinearLayout layoutEmptySaved = ViewBindings.findChildViewById(rootView, id);
+      if (layoutEmptySaved == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutSavedContent;
+      LinearLayout layoutSavedContent = ViewBindings.findChildViewById(rootView, id);
+      if (layoutSavedContent == null) {
+        break missingId;
+      }
+
       id = R.id.navItemAlerts;
       LinearLayout navItemAlerts = ViewBindings.findChildViewById(rootView, id);
       if (navItemAlerts == null) {
@@ -473,6 +499,12 @@ public final class FragmentSavedBinding implements ViewBinding {
       id = R.id.savedScrollView;
       NestedScrollView savedScrollView = ViewBindings.findChildViewById(rootView, id);
       if (savedScrollView == null) {
+        break missingId;
+      }
+
+      id = R.id.swipeRefreshSaved;
+      SwipeRefreshLayout swipeRefreshSaved = ViewBindings.findChildViewById(rootView, id);
+      if (swipeRefreshSaved == null) {
         break missingId;
       }
 
@@ -523,9 +555,10 @@ public final class FragmentSavedBinding implements ViewBinding {
           btnSortVideos, cardPdf1, cardPdf2, cardPdf3, cardStorageQuota, cardVideo1, cardVideo2,
           cardVideo3, etSearchSaved, ivBookmark1, ivBookmark2, ivBookmark3, ivBookmarkPdf1,
           ivBookmarkPdf2, ivBookmarkPdf3, ivFilterIcon, ivMenu1, ivMenu3, ivPdfIcon1, ivPdfIcon2,
-          ivPdfIcon3, ivProfileTopSaved, ivSearchInputIcon, navItemAlerts, navItemCourses,
-          navItemHome, navItemProfile, navItemSaved, savedScrollView, tabAllSaved, tabOfflinePdfs,
-          tabSavedVideos, thumb1, thumb2, thumb3, topBarSaved);
+          ivPdfIcon3, ivProfileTopSaved, ivSearchInputIcon, layoutEmptySaved, layoutSavedContent,
+          navItemAlerts, navItemCourses, navItemHome, navItemProfile, navItemSaved, savedScrollView,
+          swipeRefreshSaved, tabAllSaved, tabOfflinePdfs, tabSavedVideos, thumb1, thumb2, thumb3,
+          topBarSaved);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
