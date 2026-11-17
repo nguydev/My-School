@@ -22,6 +22,7 @@ color border_active
 color border_card
 color border_subtle
 color card_background
+color card_stroke_blue_glow
 color cyan_glow
 color cyan_neon
 color cyber_border
@@ -63,6 +64,8 @@ drawable bg_badge_pill
 drawable bg_badge_verified
 drawable bg_book_cover_dark
 drawable bg_book_cover_physics
+drawable bg_card_blue_glow
+drawable bg_card_blue_glow_sm
 drawable bg_course_mock_1
 drawable bg_course_mock_2
 drawable bg_cyber_avatar
@@ -85,6 +88,7 @@ drawable bg_pdf_btn
 drawable bg_play_btn
 drawable bg_progress_cyber
 drawable bg_resume_card
+drawable bg_saved_filter_tab
 drawable bg_video_thumb_rounded
 drawable ic_arrow_back
 drawable ic_avatar_placeholder
@@ -222,6 +226,7 @@ id bookStoreFragment
 id bookViewerFragment
 id bottomActionLayout
 id bottomNavBar
+id bottomNavContainer
 id bottomProgressionBar
 id btnAskDoubt
 id btnBack
@@ -413,6 +418,8 @@ id etStudentRoll
 id etSubject
 id fabScreenSwitcher
 id fixedTopNavBar
+id flNavCoursesGlow
+id globalBottomNavBar
 id headerTitleContainer
 id homeFragment
 id homeScrollView
@@ -472,6 +479,11 @@ id ivIconPref6
 id ivManageIcon
 id ivMenu1
 id ivMenu3
+id ivNavAlerts
+id ivNavCourses
+id ivNavHome
+id ivNavProfile
+id ivNavSaved
 id ivOrderBookThumb
 id ivPdfIcon1
 id ivPdfIcon2
@@ -487,6 +499,7 @@ id ivSearchInputIcon
 id ivShareTop
 id ivThumbSummary
 id ivUploadedPhoto
+id ivUserProfileTop
 id layoutAlertsContent
 id layoutEmptyAlerts
 id layoutEmptySaved
@@ -561,6 +574,7 @@ id thumbPhysics
 id topBar
 id topBarAlerts
 id topBarBookStore
+id topBarCourse
 id topBarOnboarding
 id topBarOrder
 id topBarProfile
@@ -578,6 +592,11 @@ id tvForgotPassword
 id tvHeaderTitle
 id tvLogo
 id tvMaskedEmail
+id tvNavAlerts
+id tvNavCourses
+id tvNavHome
+id tvNavProfile
+id tvNavSaved
 id tvOrderQty
 id tvOtpHint
 id tvPacePct
@@ -635,6 +654,7 @@ layout fragment_verify_email
 layout fragment_verify_otp
 layout fragment_video_player
 layout fragment_video_playlist
+layout layout_bottom_nav_bar
 navigation nav_auth_graph
 string active_term_status
 string already_have_account_prompt

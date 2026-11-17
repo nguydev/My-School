@@ -13,6 +13,7 @@ import androidx.navigation.Navigation;
 
 import com.edupulse.app.R;
 import com.edupulse.app.databinding.FragmentBookOrderBinding;
+import com.edupulse.app.ui.common.BottomNavHelper;
 import com.edupulse.app.ui.common.ViewAnimationUtils;
 
 public class BookOrderFragment extends Fragment {
@@ -31,6 +32,7 @@ public class BookOrderFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        BottomNavHelper.setupBottomNav(view, BottomNavHelper.ActiveTab.COURSES);
 
         ViewAnimationUtils.applyBounceEffect(
                 binding.btnBackOrder,

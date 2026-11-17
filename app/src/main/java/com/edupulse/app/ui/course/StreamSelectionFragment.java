@@ -38,7 +38,8 @@ public class StreamSelectionFragment extends Fragment {
                 binding.cardCommerceStream,
                 binding.btnEnterCommerceStream,
                 binding.cardHumanitiesStream,
-                binding.btnEnterHumanitiesStream
+                binding.btnEnterHumanitiesStream,
+                binding.ivUserProfileTop
         );
 
         setupClickListeners(view);
@@ -48,6 +49,9 @@ public class StreamSelectionFragment extends Fragment {
     private void setupClickListeners(View rootView) {
         binding.btnBack.setOnClickListener(v -> 
             Navigation.findNavController(rootView).navigateUp()
+        );
+        binding.ivUserProfileTop.setOnClickListener(v ->
+            Navigation.findNavController(rootView).navigate(R.id.profileFragment)
         );
 
         // Science Stream -> Navigates to BookViewerFragment!

@@ -59,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/topBarBookStore"
+        android:layout_above="@id/bottomNavContainer"
         android:fillViewport="true">
 
         <LinearLayout
@@ -698,5 +699,14 @@
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
+
+    <!-- Shared fixed navigation keeps the catalog reachable on small screens. -->
+    <FrameLayout
+        android:id="@+id/bottomNavContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/layout_bottom_nav_bar" />
+    </FrameLayout>
 
 </RelativeLayout>

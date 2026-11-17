@@ -587,9 +587,9 @@
         android:id="@+id/btnConfirmOrder"
         android:layout_width="match_parent"
         android:layout_height="52dp"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@id/bottomNavContainer"
         android:layout_marginHorizontal="18dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#0077FE"
         android:text="Confirm Order (কনফার্ম করুন) →"
         android:textAllCaps="false"
@@ -597,5 +597,13 @@
         android:textSize="14sp"
         android:textStyle="bold"
         app:cornerRadius="26dp" />
+
+    <FrameLayout
+        android:id="@+id/bottomNavContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <include layout="@layout/layout_bottom_nav_bar" />
+    </FrameLayout>
 
 </RelativeLayout>

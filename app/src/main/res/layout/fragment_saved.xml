@@ -290,7 +290,7 @@
                         android:id="@+id/tabAllSaved"
                         android:layout_width="wrap_content"
                         android:layout_height="34dp"
-                        android:background="@drawable/bg_neon_button"
+                        android:background="@drawable/bg_saved_filter_tab"
                         android:gravity="center"
                         android:paddingHorizontal="16dp"
                         android:text="All Saved  8"
@@ -304,7 +304,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="34dp"
                         android:layout_marginStart="10dp"
-                        android:background="@drawable/bg_input_field"
+                        android:background="@drawable/bg_saved_filter_tab"
                         android:gravity="center"
                         android:paddingHorizontal="14dp"
                         android:text="▶ Saved Videos  5"
@@ -317,7 +317,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="34dp"
                         android:layout_marginStart="10dp"
-                        android:background="@drawable/bg_input_field"
+                        android:background="@drawable/bg_saved_filter_tab"
                         android:gravity="center"
                         android:paddingHorizontal="14dp"
                         android:text="📄 Offline PDFs  3"
@@ -450,8 +450,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 app:cardCornerRadius="16dp"
-                app:cardBackgroundColor="#0F1F36"
-                app:strokeColor="#223D69"
+                app:cardBackgroundColor="@color/bg_card"
+                app:strokeColor="@color/border_card"
                 app:strokeWidth="1dp">
 
                 <RelativeLayout
@@ -559,8 +559,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="16dp"
-                app:cardBackgroundColor="#0D182B"
-                app:strokeColor="#1E3354"
+                app:cardBackgroundColor="@color/bg_card"
+                app:strokeColor="@color/border_card"
                 app:strokeWidth="1dp">
 
                 <RelativeLayout
@@ -676,8 +676,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="16dp"
-                app:cardBackgroundColor="#0D182B"
-                app:strokeColor="#1E3354"
+                app:cardBackgroundColor="@color/bg_card"
+                app:strokeColor="@color/border_card"
                 app:strokeWidth="1dp">
 
                 <RelativeLayout
@@ -842,8 +842,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 app:cardCornerRadius="16dp"
-                app:cardBackgroundColor="#0F1F36"
-                app:strokeColor="#223D69"
+                app:cardBackgroundColor="@color/bg_card"
+                app:strokeColor="@color/border_card"
                 app:strokeWidth="1dp">
 
                 <RelativeLayout
@@ -872,10 +872,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="SSC Physics – Chapter 03..."
+                            android:text="SSC Physics — Chapter 03 Formula Sheet"
                             android:textColor="@color/text_primary"
                             android:textSize="14sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -932,8 +934,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 app:cardCornerRadius="16dp"
-                app:cardBackgroundColor="#0D182B"
-                app:strokeColor="#1E3354"
+                app:cardBackgroundColor="@color/bg_card"
+                app:strokeColor="@color/border_card"
                 app:strokeWidth="1dp">
 
                 <RelativeLayout
@@ -962,10 +964,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Higher Mathematics Full..."
+                            android:text="Higher Mathematics Full Notes"
                             android:textColor="@color/text_primary"
                             android:textSize="14sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -1024,8 +1028,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="16dp"
                 app:cardCornerRadius="16dp"
-                app:cardBackgroundColor="#0D182B"
-                app:strokeColor="#1E3354"
+                app:cardBackgroundColor="@color/bg_card"
+                app:strokeColor="@color/border_card"
                 app:strokeWidth="1dp">
 
                 <RelativeLayout
@@ -1054,10 +1058,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Chemistry Periodic Table..."
+                            android:text="Chemistry Periodic Table Reference"
                             android:textColor="@color/text_primary"
                             android:textSize="14sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                         <TextView
                             android:layout_width="wrap_content"

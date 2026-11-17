@@ -23,8 +23,9 @@ public class ViewAnimationUtils {
                 case MotionEvent.ACTION_DOWN:
                     v.performHapticFeedback(HapticFeedbackConstants.KEYBOARD_TAP);
                     v.animate()
-                            .scaleX(0.96f)
-                            .scaleY(0.96f)
+                            .scaleX(0.94f)
+                            .scaleY(0.94f)
+                            .alpha(0.88f)
                             .setDuration(90)
                             .start();
                     break;
@@ -33,6 +34,7 @@ public class ViewAnimationUtils {
                     v.animate()
                             .scaleX(1.0f)
                             .scaleY(1.0f)
+                            .alpha(1.0f)
                             .setDuration(150)
                             .setInterpolator(new OvershootInterpolator(2.0f))
                             .start();

@@ -27,7 +27,7 @@
             android:id="@+id/ivNavHome"
             android:layout_width="22dp"
             android:layout_height="22dp"
-            android:src="@drawable/ic_home"
+            android:src="@drawable/ic_nav_home"
             app:tint="@color/text_tertiary" />
 
         <TextView

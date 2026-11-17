@@ -6,10 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.edupulse.app.R;
@@ -20,7 +21,10 @@ import java.lang.String;
 
 public final class FragmentStreamSelectionBinding implements ViewBinding {
   @NonNull
-  private final NestedScrollView rootView;
+  private final RelativeLayout rootView;
+
+  @NonNull
+  public final FrameLayout bottomNavContainer;
 
   @NonNull
   public final ImageButton btnBack;
@@ -52,13 +56,18 @@ public final class FragmentStreamSelectionBinding implements ViewBinding {
   @NonNull
   public final FrameLayout iconStreamScience;
 
-  private FragmentStreamSelectionBinding(@NonNull NestedScrollView rootView,
-      @NonNull ImageButton btnBack, @NonNull TextView btnEnterCommerceStream,
-      @NonNull TextView btnEnterHumanitiesStream, @NonNull TextView btnEnterScienceStream,
-      @NonNull MaterialCardView cardCommerceStream, @NonNull MaterialCardView cardHumanitiesStream,
-      @NonNull MaterialCardView cardScienceStream, @NonNull FrameLayout iconStreamCommerce,
-      @NonNull FrameLayout iconStreamHumanities, @NonNull FrameLayout iconStreamScience) {
+  @NonNull
+  public final ImageView ivUserProfileTop;
+
+  private FragmentStreamSelectionBinding(@NonNull RelativeLayout rootView,
+      @NonNull FrameLayout bottomNavContainer, @NonNull ImageButton btnBack,
+      @NonNull TextView btnEnterCommerceStream, @NonNull TextView btnEnterHumanitiesStream,
+      @NonNull TextView btnEnterScienceStream, @NonNull MaterialCardView cardCommerceStream,
+      @NonNull MaterialCardView cardHumanitiesStream, @NonNull MaterialCardView cardScienceStream,
+      @NonNull FrameLayout iconStreamCommerce, @NonNull FrameLayout iconStreamHumanities,
+      @NonNull FrameLayout iconStreamScience, @NonNull ImageView ivUserProfileTop) {
     this.rootView = rootView;
+    this.bottomNavContainer = bottomNavContainer;
     this.btnBack = btnBack;
     this.btnEnterCommerceStream = btnEnterCommerceStream;
     this.btnEnterHumanitiesStream = btnEnterHumanitiesStream;
@@ -69,11 +78,12 @@ public final class FragmentStreamSelectionBinding implements ViewBinding {
     this.iconStreamCommerce = iconStreamCommerce;
     this.iconStreamHumanities = iconStreamHumanities;
     this.iconStreamScience = iconStreamScience;
+    this.ivUserProfileTop = ivUserProfileTop;
   }
 
   @Override
   @NonNull
-  public NestedScrollView getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -98,6 +108,12 @@ public final class FragmentStreamSelectionBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottomNavContainer;
+      FrameLayout bottomNavContainer = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavContainer == null) {
+        break missingId;
+      }
+
       id = R.id.btnBack;
       ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
@@ -158,10 +174,16 @@ public final class FragmentStreamSelectionBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentStreamSelectionBinding((NestedScrollView) rootView, btnBack,
-          btnEnterCommerceStream, btnEnterHumanitiesStream, btnEnterScienceStream,
+      id = R.id.ivUserProfileTop;
+      ImageView ivUserProfileTop = ViewBindings.findChildViewById(rootView, id);
+      if (ivUserProfileTop == null) {
+        break missingId;
+      }
+
+      return new FragmentStreamSelectionBinding((RelativeLayout) rootView, bottomNavContainer,
+          btnBack, btnEnterCommerceStream, btnEnterHumanitiesStream, btnEnterScienceStream,
           cardCommerceStream, cardHumanitiesStream, cardScienceStream, iconStreamCommerce,
-          iconStreamHumanities, iconStreamScience);
+          iconStreamHumanities, iconStreamScience, ivUserProfileTop);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

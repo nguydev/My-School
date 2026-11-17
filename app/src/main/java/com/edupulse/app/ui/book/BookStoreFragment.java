@@ -13,6 +13,7 @@ import androidx.navigation.Navigation;
 import com.edupulse.app.R;
 import com.edupulse.app.databinding.FragmentBookStoreBinding;
 import com.edupulse.app.ui.common.ViewAnimationUtils;
+import com.edupulse.app.ui.common.BottomNavHelper;
 
 public class BookStoreFragment extends Fragment {
 
@@ -47,6 +48,7 @@ public class BookStoreFragment extends Fragment {
         binding.btnBackBookStore.setOnClickListener(v ->
                 Navigation.findNavController(view).navigateUp()
         );
+        BottomNavHelper.setupBottomNav(view, BottomNavHelper.ActiveTab.COURSES);
 
         binding.ivProfileTopStore.setOnClickListener(v ->
                 Navigation.findNavController(view).navigate(R.id.profileFragment)

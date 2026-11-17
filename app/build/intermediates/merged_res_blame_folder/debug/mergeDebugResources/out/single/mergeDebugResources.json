@@ -44,6 +44,10 @@
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\bg_hero_card.xml"
     },
     {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_bg_card_blue_glow.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\bg_card_blue_glow.xml"
+    },
+    {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_ic_flask.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\ic_flask.xml"
     },
@@ -108,10 +112,6 @@
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "com.edupulse.app-debug-44:/layout_fragment_onboarding.xml.flat",
-        "source": "com.edupulse.app-main-46:/layout/fragment_onboarding.xml"
-    },
-    {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_ic_arrow_back.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\ic_arrow_back.xml"
     },
@@ -134,6 +134,10 @@
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\layout_fragment_book_viewer.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_book_viewer.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\color_card_stroke_blue_glow.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\color\\card_stroke_blue_glow.xml"
     },
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_bg_neon_button.xml.flat",
@@ -184,12 +188,20 @@
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\ic_empty_box.xml"
     },
     {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_bg_saved_filter_tab.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\bg_saved_filter_tab.xml"
+    },
+    {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_ic_filter.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\ic_filter.xml"
     },
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_ic_verified.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\ic_verified.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_bg_nav_active_glow.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\bg_nav_active_glow.xml"
     },
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_bg_otp_box_default.xml.flat",
@@ -236,6 +248,10 @@
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_chapter_roadmap.xml"
     },
     {
+        "merged": "com.edupulse.app-debug-44:/layout_layout_bottom_nav_bar.xml.flat",
+        "source": "com.edupulse.app-main-46:/layout/layout_bottom_nav_bar.xml"
+    },
+    {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_ic_moon.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\ic_moon.xml"
     },
@@ -252,16 +268,16 @@
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\bg_neon_button_selector.xml"
     },
     {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\layout_layout_bottom_nav_bar.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\layout_bottom_nav_bar.xml"
+    },
+    {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_bg_pdf_btn.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\bg_pdf_btn.xml"
     },
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\layout_fragment_register_step2.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_register_step2.xml"
-    },
-    {
-        "merged": "com.edupulse.app-debug-44:/layout_fragment_home.xml.flat",
-        "source": "com.edupulse.app-main-46:/layout/fragment_home.xml"
     },
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_ic_chevron_right.xml.flat",
@@ -360,10 +376,6 @@
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\bg_input_field.xml"
     },
     {
-        "merged": "com.edupulse.app-debug-44:/drawable_bg_nav_active_glow.xml.flat",
-        "source": "com.edupulse.app-main-46:/drawable/bg_nav_active_glow.xml"
-    },
-    {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\layout_fragment_edupulse_sign_in.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_edupulse_sign_in.xml"
     },
@@ -446,6 +458,10 @@
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_ic_video_library.xml.flat",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\ic_video_library.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\drawable_bg_card_blue_glow_sm.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\drawable\\bg_card_blue_glow_sm.xml"
     },
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-44:\\layout_fragment_book_order.xml.flat",

@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -23,6 +24,9 @@ import java.lang.String;
 public final class FragmentBookStoreBinding implements ViewBinding {
   @NonNull
   private final RelativeLayout rootView;
+
+  @NonNull
+  public final FrameLayout bottomNavContainer;
 
   @NonNull
   public final ImageButton btnBackBookStore;
@@ -79,16 +83,18 @@ public final class FragmentBookStoreBinding implements ViewBinding {
   public final RelativeLayout topBarBookStore;
 
   private FragmentBookStoreBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageButton btnBackBookStore, @NonNull MaterialButton btnOrderBook1,
-      @NonNull MaterialButton btnOrderBook2, @NonNull MaterialButton btnOrderBook3,
-      @NonNull MaterialCardView cardBookOrder1, @NonNull MaterialCardView cardBookOrder2,
-      @NonNull MaterialCardView cardBookOrder3, @NonNull EditText etSearchStore,
-      @NonNull ImageView ivBookThumb1, @NonNull ImageView ivBookThumb2,
-      @NonNull ImageView ivBookThumb3, @NonNull ImageView ivProfileTopStore,
-      @NonNull ImageView ivSearchIconStore, @NonNull TextView tabAllBooks,
-      @NonNull TextView tabChemistry, @NonNull TextView tabHigherMath, @NonNull TextView tabPhysics,
+      @NonNull FrameLayout bottomNavContainer, @NonNull ImageButton btnBackBookStore,
+      @NonNull MaterialButton btnOrderBook1, @NonNull MaterialButton btnOrderBook2,
+      @NonNull MaterialButton btnOrderBook3, @NonNull MaterialCardView cardBookOrder1,
+      @NonNull MaterialCardView cardBookOrder2, @NonNull MaterialCardView cardBookOrder3,
+      @NonNull EditText etSearchStore, @NonNull ImageView ivBookThumb1,
+      @NonNull ImageView ivBookThumb2, @NonNull ImageView ivBookThumb3,
+      @NonNull ImageView ivProfileTopStore, @NonNull ImageView ivSearchIconStore,
+      @NonNull TextView tabAllBooks, @NonNull TextView tabChemistry,
+      @NonNull TextView tabHigherMath, @NonNull TextView tabPhysics,
       @NonNull RelativeLayout topBarBookStore) {
     this.rootView = rootView;
+    this.bottomNavContainer = bottomNavContainer;
     this.btnBackBookStore = btnBackBookStore;
     this.btnOrderBook1 = btnOrderBook1;
     this.btnOrderBook2 = btnOrderBook2;
@@ -136,6 +142,12 @@ public final class FragmentBookStoreBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottomNavContainer;
+      FrameLayout bottomNavContainer = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavContainer == null) {
+        break missingId;
+      }
+
       id = R.id.btnBackBookStore;
       ImageButton btnBackBookStore = ViewBindings.findChildViewById(rootView, id);
       if (btnBackBookStore == null) {
@@ -244,9 +256,9 @@ public final class FragmentBookStoreBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentBookStoreBinding((RelativeLayout) rootView, btnBackBookStore,
-          btnOrderBook1, btnOrderBook2, btnOrderBook3, cardBookOrder1, cardBookOrder2,
-          cardBookOrder3, etSearchStore, ivBookThumb1, ivBookThumb2, ivBookThumb3,
+      return new FragmentBookStoreBinding((RelativeLayout) rootView, bottomNavContainer,
+          btnBackBookStore, btnOrderBook1, btnOrderBook2, btnOrderBook3, cardBookOrder1,
+          cardBookOrder2, cardBookOrder3, etSearchStore, ivBookThumb1, ivBookThumb2, ivBookThumb3,
           ivProfileTopStore, ivSearchIconStore, tabAllBooks, tabChemistry, tabHigherMath,
           tabPhysics, topBarBookStore);
     }

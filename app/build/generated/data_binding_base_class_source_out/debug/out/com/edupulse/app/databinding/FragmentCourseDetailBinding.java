@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.widget.NestedScrollView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.edupulse.app.R;
@@ -20,7 +20,10 @@ import java.lang.String;
 
 public final class FragmentCourseDetailBinding implements ViewBinding {
   @NonNull
-  private final NestedScrollView rootView;
+  private final RelativeLayout rootView;
+
+  @NonNull
+  public final FrameLayout bottomNavContainer;
 
   @NonNull
   public final ImageButton btnBack;
@@ -77,10 +80,14 @@ public final class FragmentCourseDetailBinding implements ViewBinding {
   public final FrameLayout iconScience;
 
   @NonNull
+  public final RelativeLayout topBarCourse;
+
+  @NonNull
   public final TextView tvAllMentors;
 
-  private FragmentCourseDetailBinding(@NonNull NestedScrollView rootView,
-      @NonNull ImageButton btnBack, @NonNull TextView btnConsult, @NonNull TextView btnDownloadPdf,
+  private FragmentCourseDetailBinding(@NonNull RelativeLayout rootView,
+      @NonNull FrameLayout bottomNavContainer, @NonNull ImageButton btnBack,
+      @NonNull TextView btnConsult, @NonNull TextView btnDownloadPdf,
       @NonNull TextView btnOpenScienceModules, @NonNull TextView btnSwitchBusiness,
       @NonNull TextView btnSwitchHumanities, @NonNull MaterialCardView cardBusinessTrack,
       @NonNull MaterialCardView cardCounselorGuidance, @NonNull MaterialCardView cardCourseOverview,
@@ -88,8 +95,10 @@ public final class FragmentCourseDetailBinding implements ViewBinding {
       @NonNull MaterialCardView cardLeadMentors, @NonNull MaterialCardView cardScienceTrack,
       @NonNull FrameLayout iconBusiness, @NonNull FrameLayout iconCounselor,
       @NonNull FrameLayout iconGuide, @NonNull FrameLayout iconHumanities,
-      @NonNull FrameLayout iconScience, @NonNull TextView tvAllMentors) {
+      @NonNull FrameLayout iconScience, @NonNull RelativeLayout topBarCourse,
+      @NonNull TextView tvAllMentors) {
     this.rootView = rootView;
+    this.bottomNavContainer = bottomNavContainer;
     this.btnBack = btnBack;
     this.btnConsult = btnConsult;
     this.btnDownloadPdf = btnDownloadPdf;
@@ -108,12 +117,13 @@ public final class FragmentCourseDetailBinding implements ViewBinding {
     this.iconGuide = iconGuide;
     this.iconHumanities = iconHumanities;
     this.iconScience = iconScience;
+    this.topBarCourse = topBarCourse;
     this.tvAllMentors = tvAllMentors;
   }
 
   @Override
   @NonNull
-  public NestedScrollView getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -138,6 +148,12 @@ public final class FragmentCourseDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottomNavContainer;
+      FrameLayout bottomNavContainer = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavContainer == null) {
+        break missingId;
+      }
+
       id = R.id.btnBack;
       ImageButton btnBack = ViewBindings.findChildViewById(rootView, id);
       if (btnBack == null) {
@@ -246,17 +262,23 @@ public final class FragmentCourseDetailBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.topBarCourse;
+      RelativeLayout topBarCourse = ViewBindings.findChildViewById(rootView, id);
+      if (topBarCourse == null) {
+        break missingId;
+      }
+
       id = R.id.tvAllMentors;
       TextView tvAllMentors = ViewBindings.findChildViewById(rootView, id);
       if (tvAllMentors == null) {
         break missingId;
       }
 
-      return new FragmentCourseDetailBinding((NestedScrollView) rootView, btnBack, btnConsult,
-          btnDownloadPdf, btnOpenScienceModules, btnSwitchBusiness, btnSwitchHumanities,
+      return new FragmentCourseDetailBinding((RelativeLayout) rootView, bottomNavContainer, btnBack,
+          btnConsult, btnDownloadPdf, btnOpenScienceModules, btnSwitchBusiness, btnSwitchHumanities,
           cardBusinessTrack, cardCounselorGuidance, cardCourseOverview, cardCurriculumGuide,
           cardHumanitiesTrack, cardLeadMentors, cardScienceTrack, iconBusiness, iconCounselor,
-          iconGuide, iconHumanities, iconScience, tvAllMentors);
+          iconGuide, iconHumanities, iconScience, topBarCourse, tvAllMentors);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

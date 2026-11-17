@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -56,6 +57,7 @@ public class SavedFragment extends Fragment {
         );
 
         setupClickListeners(view);
+        selectFilter(binding.tabAllSaved);
         setupPullToRefresh();
     }
 
@@ -81,6 +83,7 @@ public class SavedFragment extends Fragment {
             binding.cardPdf1.setVisibility(View.VISIBLE);
             binding.cardPdf2.setVisibility(View.VISIBLE);
             binding.cardPdf3.setVisibility(View.VISIBLE);
+            selectFilter(binding.tabAllSaved);
             Toast.makeText(requireContext(), "Showing All 8 Saved Items", Toast.LENGTH_SHORT).show();
         });
 
@@ -91,6 +94,7 @@ public class SavedFragment extends Fragment {
             binding.cardPdf1.setVisibility(View.GONE);
             binding.cardPdf2.setVisibility(View.GONE);
             binding.cardPdf3.setVisibility(View.GONE);
+            selectFilter(binding.tabSavedVideos);
             Toast.makeText(requireContext(), "Showing 5 Saved Videos", Toast.LENGTH_SHORT).show();
         });
 
@@ -101,12 +105,20 @@ public class SavedFragment extends Fragment {
             binding.cardPdf1.setVisibility(View.VISIBLE);
             binding.cardPdf2.setVisibility(View.VISIBLE);
             binding.cardPdf3.setVisibility(View.VISIBLE);
+            selectFilter(binding.tabOfflinePdfs);
             Toast.makeText(requireContext(), "Showing 3 Offline PDFs", Toast.LENGTH_SHORT).show();
         });
 
-        binding.btnDownloadAll.setOnClickListener(v ->
-                Toast.makeText(requireContext(), "Starting download of pending files...", Toast.LENGTH_SHORT).show()
-        );
+        binding.btnDownloadAll.setOnClickListener(v -> {
+            binding.btnDownloadAll.setEnabled(false);
+            binding.btnDownloadAll.setText("Preparing...");
+            binding.btnDownloadAll.postDelayed(() -> {
+                if (binding != null) {
+                    binding.btnDownloadAll.setText("Queued");
+                    Toast.makeText(requireContext(), "Download queued. It will start when Wi-Fi is available.", Toast.LENGTH_LONG).show();
+                }
+            }, 350);
+        });
 
         // Video item 1 -> Open Video Player
         binding.cardVideo1.setOnClickListener(v ->
@@ -117,9 +129,10 @@ public class SavedFragment extends Fragment {
         binding.cardVideo2.setOnClickListener(v ->
                 Navigation.findNavController(rootView).navigate(R.id.action_saved_to_videoPlayer)
         );
-        binding.btnDownloadVid2.setOnClickListener(v ->
-                Toast.makeText(requireContext(), "Downloading Coordinate Geometry (22:15)...", Toast.LENGTH_SHORT).show()
-        );
+        binding.btnDownloadVid2.setOnClickListener(v -> {
+            binding.btnDownloadVid2.setText("Queued");
+            Toast.makeText(requireContext(), "Coordinate Geometry download queued.", Toast.LENGTH_SHORT).show();
+        });
 
         // Video item 3 -> Open Video Player
         binding.cardVideo3.setOnClickListener(v ->
@@ -167,6 +180,15 @@ public class SavedFragment extends Fragment {
         binding.navItemProfile.setOnClickListener(v ->
                 Navigation.findNavController(rootView).navigate(R.id.action_saved_to_profile)
         );
+    }
+
+    private void selectFilter(TextView selected) {
+        TextView[] filters = {binding.tabAllSaved, binding.tabSavedVideos, binding.tabOfflinePdfs};
+        for (TextView filter : filters) {
+            boolean active = filter == selected;
+            filter.setSelected(active);
+            filter.setTextColor(requireContext().getColor(active ? R.color.bg_screen : R.color.text_secondary));
+        }
     }
 
     @Override

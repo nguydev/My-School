@@ -4,16 +4,16 @@
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_book_viewer.xml"
     },
     {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-43:\\layout\\layout_bottom_nav_bar.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\layout_bottom_nav_bar.xml"
+    },
+    {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-43:\\layout\\fragment_alerts.xml",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_alerts.xml"
     },
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-43:\\layout\\fragment_verify_email.xml",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_verify_email.xml"
-    },
-    {
-        "merged": "com.edupulse.app-mergeDebugResources-43:/layout/fragment_onboarding.xml",
-        "source": "com.edupulse.app-main-46:/layout/fragment_onboarding.xml"
     },
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-43:\\layout\\fragment_pdf_viewer.xml",
@@ -28,12 +28,12 @@
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_book_store.xml"
     },
     {
-        "merged": "com.edupulse.app-mergeDebugResources-43:/layout/fragment_home.xml",
-        "source": "com.edupulse.app-main-46:/layout/fragment_home.xml"
-    },
-    {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-43:\\layout\\fragment_home.xml",
         "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-46:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "com.edupulse.app-mergeDebugResources-43:/layout/layout_bottom_nav_bar.xml",
+        "source": "com.edupulse.app-main-46:/layout/layout_bottom_nav_bar.xml"
     },
     {
         "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-43:\\layout\\fragment_verify_otp.xml",

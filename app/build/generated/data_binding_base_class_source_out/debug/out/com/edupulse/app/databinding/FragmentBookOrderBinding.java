@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -22,6 +23,9 @@ import java.lang.String;
 public final class FragmentBookOrderBinding implements ViewBinding {
   @NonNull
   private final RelativeLayout rootView;
+
+  @NonNull
+  public final FrameLayout bottomNavContainer;
 
   @NonNull
   public final ImageButton btnBackOrder;
@@ -72,8 +76,9 @@ public final class FragmentBookOrderBinding implements ViewBinding {
   public final TextView tvOrderQty;
 
   private FragmentBookOrderBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageButton btnBackOrder, @NonNull MaterialButton btnConfirmOrder,
-      @NonNull TextView btnQtyMinus, @NonNull TextView btnQtyPlus, @NonNull EditText etContactPhone,
+      @NonNull FrameLayout bottomNavContainer, @NonNull ImageButton btnBackOrder,
+      @NonNull MaterialButton btnConfirmOrder, @NonNull TextView btnQtyMinus,
+      @NonNull TextView btnQtyPlus, @NonNull EditText etContactPhone,
       @NonNull EditText etDeliveryAddress, @NonNull EditText etDeliveryInstructions,
       @NonNull EditText etEnrolledClass, @NonNull EditText etRecipientName,
       @NonNull EditText etSchoolName, @NonNull EditText etStudentRoll,
@@ -81,6 +86,7 @@ public final class FragmentBookOrderBinding implements ViewBinding {
       @NonNull ImageView ivProfileTopOrder, @NonNull RelativeLayout topBarOrder,
       @NonNull TextView tvOrderQty) {
     this.rootView = rootView;
+    this.bottomNavContainer = bottomNavContainer;
     this.btnBackOrder = btnBackOrder;
     this.btnConfirmOrder = btnConfirmOrder;
     this.btnQtyMinus = btnQtyMinus;
@@ -126,6 +132,12 @@ public final class FragmentBookOrderBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottomNavContainer;
+      FrameLayout bottomNavContainer = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavContainer == null) {
+        break missingId;
+      }
+
       id = R.id.btnBackOrder;
       ImageButton btnBackOrder = ViewBindings.findChildViewById(rootView, id);
       if (btnBackOrder == null) {
@@ -222,10 +234,10 @@ public final class FragmentBookOrderBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentBookOrderBinding((RelativeLayout) rootView, btnBackOrder, btnConfirmOrder,
-          btnQtyMinus, btnQtyPlus, etContactPhone, etDeliveryAddress, etDeliveryInstructions,
-          etEnrolledClass, etRecipientName, etSchoolName, etStudentRoll, ivCourierIcon,
-          ivOrderBookThumb, ivProfileTopOrder, topBarOrder, tvOrderQty);
+      return new FragmentBookOrderBinding((RelativeLayout) rootView, bottomNavContainer,
+          btnBackOrder, btnConfirmOrder, btnQtyMinus, btnQtyPlus, etContactPhone, etDeliveryAddress,
+          etDeliveryInstructions, etEnrolledClass, etRecipientName, etSchoolName, etStudentRoll,
+          ivCourierIcon, ivOrderBookThumb, ivProfileTopOrder, topBarOrder, tvOrderQty);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
