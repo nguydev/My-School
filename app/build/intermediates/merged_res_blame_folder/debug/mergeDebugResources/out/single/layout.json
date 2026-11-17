@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_saved.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_saved.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_pdf_viewer.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_pdf_viewer.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_course_detail.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_course_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\activity_auth.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\activity_auth.xml"
+    },
+    {
+        "merged": "com.edupulse.app-mergeDebugResources-42:/layout/fragment_onboarding.xml",
+        "source": "com.edupulse.app-main-45:/layout/fragment_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_register_step2.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_register_step2.xml"
+    },
+    {
+        "merged": "com.edupulse.app-mergeDebugResources-42:/layout/fragment_book_order.xml",
+        "source": "com.edupulse.app-main-45:/layout/fragment_book_order.xml"
+    },
+    {
+        "merged": "com.edupulse.app-mergeDebugResources-42:/layout/fragment_book_store.xml",
+        "source": "com.edupulse.app-main-45:/layout/fragment_book_store.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_video_player.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_video_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_verify_otp.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_verify_otp.xml"
+    },
+    {
+        "merged": "com.edupulse.app-mergeDebugResources-42:/layout/fragment_order_success.xml",
+        "source": "com.edupulse.app-main-45:/layout/fragment_order_success.xml"
+    },
+    {
+        "merged": "com.edupulse.app-mergeDebugResources-42:/layout/fragment_home.xml",
+        "source": "com.edupulse.app-main-45:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_book_viewer.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_book_viewer.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_verify_email.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_verify_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_reset_password.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_reset_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_alerts.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_alerts.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_book_detail.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_book_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_nexus_portal_login.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_nexus_portal_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_stream_selection.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_stream_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_video_playlist.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_video_playlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_edupulse_sign_in.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_edupulse_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-mergeDebugResources-42:\\layout\\fragment_chapter_roadmap.xml",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_chapter_roadmap.xml"
+    }
+]

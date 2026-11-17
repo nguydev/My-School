@@ -1,0 +1,474 @@
+[
+    {
+        "merged": "com.edupulse.app-debug-43:/drawable_ic_truck.xml.flat",
+        "source": "com.edupulse.app-main-45:/drawable/ic_truck.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\navigation_nav_auth_graph.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\navigation\\nav_auth_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_check.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\anim_btn_press.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\anim\\btn_press.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_verified.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_verified.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_profile.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_course_mock_1.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_course_mock_1.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_register_step2.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_register_step2.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_video_player.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_video_player.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\anim_slide_in_right.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\anim\\slide_in_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_book_detail.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_book_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_saved.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_saved.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_flask.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_flask.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_headset.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_headset.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_hero_card.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_hero_card.xml"
+    },
+    {
+        "merged": "com.edupulse.app-debug-43:/drawable_ic_copy.xml.flat",
+        "source": "com.edupulse.app-main-45:/drawable/ic_copy.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_book_viewer.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_book_viewer.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_course_detail.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_course_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_book.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_book.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_input_field.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_input_field.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_dark_cyber_gradient.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_dark_cyber_gradient.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_play.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_play.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_dashboard.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_arrow_back.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_arrow_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_course_mock_2.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_course_mock_2.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_otp_box_focused.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_otp_box_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_badge_pill.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_badge_pill.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_google.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_google.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_cyber_avatar.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_cyber_avatar.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_moon.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_moon.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_video_lecture.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_video_lecture.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_help.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_help.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_star_filled.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_star_filled.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_mail.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_mail.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_clock.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_clock.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_nav_home.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_nav_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_badge_check.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_badge_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_medal.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_medal.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_more_vert.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_more_vert.xml"
+    },
+    {
+        "merged": "com.edupulse.app-debug-43:/layout_fragment_book_order.xml.flat",
+        "source": "com.edupulse.app-main-45:/layout/fragment_book_order.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_download.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_download.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_google_btn.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_google_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_chevron_right.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_chevron_right.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_file_download.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_file_download.xml"
+    },
+    {
+        "merged": "com.edupulse.app-debug-43:/layout_fragment_book_store.xml.flat",
+        "source": "com.edupulse.app-main-45:/layout/fragment_book_store.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_shield_lock.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_shield_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_video_thumb_rounded.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_video_thumb_rounded.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_calendar.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_calendar.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_eye.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_eye.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_pdf_viewer.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_pdf_viewer.xml"
+    },
+    {
+        "merged": "com.edupulse.app-debug-43:/navigation_nav_auth_graph.xml.flat",
+        "source": "com.edupulse.app-main-45:/navigation/nav_auth_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_trend_up.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_trend_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_nexus_portal_login.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_nexus_portal_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_receipt.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_receipt.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_neon_button_selector.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_neon_button_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_share.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_verify_email.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_verify_email.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_eye_off.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_eye_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_library_books.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_library_books.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_sync.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_sync.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_neon_button_pressed.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_neon_button_pressed.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_logout.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_logout.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_pencil.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_pencil.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_icon_container_glow.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_icon_container_glow.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_otp_box_default.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_otp_box_default.xml"
+    },
+    {
+        "merged": "com.edupulse.app-debug-43:/layout_fragment_onboarding.xml.flat",
+        "source": "com.edupulse.app-main-45:/layout/fragment_onboarding.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_bell_notif.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_bell_notif.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_alerts.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_alerts.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_stream_selection.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_stream_selection.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\anim_btn_release.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\anim\\btn_release.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_input_focused.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_input_focused.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_user.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_calculator.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_calculator.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\anim_fade_in.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_otp_box_selector.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_otp_box_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_filter.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_filter.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_badge_verified.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_badge_verified.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_activity_auth.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\activity_auth.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_file_document.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_file_document.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_play_btn.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_play_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_search.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_search.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\anim_fade_out.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_chevron_down.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_chevron_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_glass_card.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_glass_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_avatar_placeholder.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_avatar_placeholder.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_teacher.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_teacher.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_shield_check.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_shield_check.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_school.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_school.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_neon_button.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_neon_button.xml"
+    },
+    {
+        "merged": "com.edupulse.app-debug-43:/layout_fragment_order_success.xml.flat",
+        "source": "com.edupulse.app-main-45:/layout/fragment_order_success.xml"
+    },
+    {
+        "merged": "com.edupulse.app-debug-43:/layout_fragment_home.xml.flat",
+        "source": "com.edupulse.app-main-45:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_chapter_roadmap.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_chapter_roadmap.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_qr_code.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_qr_code.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_input_selector.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_input_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_globe.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_globe.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_video_playlist.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_video_playlist.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_video_library.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_video_library.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_play_arrow.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_play_arrow.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_book_cover_physics.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_book_cover_physics.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_pdf_btn.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_pdf_btn.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_lightning.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_lightning.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_progress_cyber.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_progress_cyber.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\anim_slide_out_left.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\anim\\slide_out_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_star_blue.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_star_blue.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_phone.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_phone.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_resume_card.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_resume_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_verify_otp.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_verify_otp.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_edupulse_sign_in.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_edupulse_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_graduation_cap.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_graduation_cap.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_reset_password.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_reset_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_ic_bookmark.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\ic_bookmark.xml"
+    },
+    {
+        "merged": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-debug-43:\\drawable_bg_book_cover_dark.xml.flat",
+        "source": "C:\\Users\\TradeOne\\.gradle\\daemon\\8.9\\com.edupulse.app-main-45:\\drawable\\bg_book_cover_dark.xml"
+    }
+]

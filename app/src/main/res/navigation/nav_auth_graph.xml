@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_auth_graph"
+    app:startDestination="@id/onboardingFragment">
+
+    <!-- Screen 0: App First Page - Onboarding (Mentor Elite) -->
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.edupulse.app.ui.onboarding.OnboardingFragment"
+        android:label="OnboardingFragment"
+        tools:layout="@layout/fragment_onboarding">
+        <action
+            android:id="@+id/action_onboarding_to_home"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_onboarding_to_login"
+            app:destination="@id/nexusPortalLoginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 1: Nexus Portal Login (Start Destination) -->
+    <fragment
+        android:id="@+id/nexusPortalLoginFragment"
+        android:name="com.edupulse.app.ui.auth.portal.NexusPortalLoginFragment"
+        android:label="NexusPortalLoginFragment"
+        tools:layout="@layout/fragment_nexus_portal_login">
+        <action
+            android:id="@+id/action_nexusLogin_to_edupulseSignIn"
+            app:destination="@id/edupulseSignInFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_nexusLogin_to_registerStep2"
+            app:destination="@id/registerStep2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_nexusLogin_to_verifyEmail"
+            app:destination="@id/verifyEmailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_nexusLogin_to_verifyOtp"
+            app:destination="@id/verifyOtpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_nexusLogin_to_resetPassword"
+            app:destination="@id/resetPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_nexusLogin_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 2: EduPulse Scholar Sign-In (Alternative) -->
+    <fragment
+        android:id="@+id/edupulseSignInFragment"
+        android:name="com.edupulse.app.ui.auth.signin.EduPulseSignInFragment"
+        android:label="EduPulseSignInFragment"
+        tools:layout="@layout/fragment_edupulse_sign_in">
+        <action
+            android:id="@+id/action_edupulseSignIn_to_registerStep2"
+            app:destination="@id/registerStep2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_edupulseSignIn_to_verifyOtp"
+            app:destination="@id/verifyOtpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_edupulseSignIn_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 3: Complete Registration Step 2 -->
+    <fragment
+        android:id="@+id/registerStep2Fragment"
+        android:name="com.edupulse.app.ui.auth.register.RegisterStep2Fragment"
+        android:label="RegisterStep2Fragment"
+        tools:layout="@layout/fragment_register_step2">
+        <action
+            android:id="@+id/action_registerStep2_to_verifyOtp"
+            app:destination="@id/verifyOtpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_registerStep2_to_nexusLogin"
+            app:destination="@id/nexusPortalLoginFragment"
+            app:popUpTo="@id/nexusPortalLoginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Screen 4: Verify Email -->
+    <fragment
+        android:id="@+id/verifyEmailFragment"
+        android:name="com.edupulse.app.ui.auth.verify.VerifyEmailFragment"
+        android:label="VerifyEmailFragment"
+        tools:layout="@layout/fragment_verify_email">
+        <action
+            android:id="@+id/action_verifyEmail_to_verifyOtp"
+            app:destination="@id/verifyOtpFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_verifyEmail_to_resetPassword"
+            app:destination="@id/resetPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 5: 6-Digit OTP Identity Verification -->
+    <fragment
+        android:id="@+id/verifyOtpFragment"
+        android:name="com.edupulse.app.ui.auth.verify.VerifyOtpFragment"
+        android:label="VerifyOtpFragment"
+        tools:layout="@layout/fragment_verify_otp">
+        <action
+            android:id="@+id/action_verifyOtp_to_resetPassword"
+            app:destination="@id/resetPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_verifyOtp_to_verifyEmail"
+            app:destination="@id/verifyEmailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_verifyOtp_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 6: Reset Password -->
+    <fragment
+        android:id="@+id/resetPasswordFragment"
+        android:name="com.edupulse.app.ui.auth.password.ResetPasswordFragment"
+        android:label="ResetPasswordFragment"
+        tools:layout="@layout/fragment_reset_password">
+        <action
+            android:id="@+id/action_resetPassword_to_nexusLogin"
+            app:destination="@id/nexusPortalLoginFragment"
+            app:popUpTo="@id/nexusPortalLoginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_resetPassword_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 7: Student Learning Portal Home Page -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.edupulse.app.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_courseDetail"
+            app:destination="@id/courseDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_home_to_streamSelection"
+            app:destination="@id/streamSelectionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_home_to_nexusLogin"
+            app:destination="@id/nexusPortalLoginFragment"
+            app:popUpTo="@id/nexusPortalLoginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_home_to_alerts"
+            app:destination="@id/alertsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_home_to_saved"
+            app:destination="@id/savedFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_home_to_profile"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_home_to_bookStore"
+            app:destination="@id/bookStoreFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 8: SSC Preparation 2027 Course Detail Page (Figma Screen 1) -->
+    <fragment
+        android:id="@+id/courseDetailFragment"
+        android:name="com.edupulse.app.ui.course.CourseDetailFragment"
+        android:label="CourseDetailFragment"
+        tools:layout="@layout/fragment_course_detail">
+        <action
+            android:id="@+id/action_courseDetail_to_streamSelection"
+            app:destination="@id/streamSelectionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 9: Choose Your Academic Stream Page (Figma Screen 2) -->
+    <fragment
+        android:id="@+id/streamSelectionFragment"
+        android:name="com.edupulse.app.ui.course.StreamSelectionFragment"
+        android:label="StreamSelectionFragment"
+        tools:layout="@layout/fragment_stream_selection">
+        <action
+            android:id="@+id/action_streamSelection_to_bookViewer"
+            app:destination="@id/bookViewerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 10: BookViewer - Science Stream Class 9 & 10 (Figma Screen 3 Left) -->
+    <fragment
+        android:id="@+id/bookViewerFragment"
+        android:name="com.edupulse.app.ui.book.BookViewerFragment"
+        android:label="BookViewerFragment"
+        tools:layout="@layout/fragment_book_viewer">
+        <action
+            android:id="@+id/action_bookViewer_to_bookDetail"
+            app:destination="@id/bookDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 11: Book Detail - SSC Physics Complete Overview (Figma Screen 3 Middle) -->
+    <fragment
+        android:id="@+id/bookDetailFragment"
+        android:name="com.edupulse.app.ui.book.BookDetailFragment"
+        android:label="BookDetailFragment"
+        tools:layout="@layout/fragment_book_detail">
+        <action
+            android:id="@+id/action_bookDetail_to_chapterRoadmap"
+            app:destination="@id/chapterRoadmapFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_bookDetail_to_pdfViewer"
+            app:destination="@id/pdfViewerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 12: Chapter Roadmap & Syllabus - SSC Physics (Figma Screen 3 Right) -->
+    <fragment
+        android:id="@+id/chapterRoadmapFragment"
+        android:name="com.edupulse.app.ui.book.ChapterRoadmapFragment"
+        android:label="ChapterRoadmapFragment"
+        tools:layout="@layout/fragment_chapter_roadmap">
+        <action
+            android:id="@+id/action_chapterRoadmap_to_videoPlaylist"
+            app:destination="@id/videoPlaylistFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 13: Video Playlist - Chapter 03: Force & Laws of Motion (New Figma 1) -->
+    <fragment
+        android:id="@+id/videoPlaylistFragment"
+        android:name="com.edupulse.app.ui.player.VideoPlaylistFragment"
+        android:label="VideoPlaylistFragment"
+        tools:layout="@layout/fragment_video_playlist">
+        <action
+            android:id="@+id/action_videoPlaylist_to_videoPlayer"
+            app:destination="@id/videoPlayerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+        <action
+            android:id="@+id/action_videoPlaylist_to_pdfViewer"
+            app:destination="@id/pdfViewerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 14: Video Player & Simulation Interactive (New Figma 2) -->
+    <fragment
+        android:id="@+id/videoPlayerFragment"
+        android:name="com.edupulse.app.ui.player.VideoPlayerFragment"
+        android:label="VideoPlayerFragment"
+        tools:layout="@layout/fragment_video_player">
+        <action
+            android:id="@+id/action_videoPlayer_to_pdfViewer"
+            app:destination="@id/pdfViewerFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 15: PDF & Textbook In-App Reader (New Figma 3) -->
+    <fragment
+        android:id="@+id/pdfViewerFragment"
+        android:name="com.edupulse.app.ui.pdf.PdfViewerFragment"
+        android:label="PdfViewerFragment"
+        tools:layout="@layout/fragment_pdf_viewer" />
+
+    <!-- Screen 16: Alerts & Updates Feed (Figma Alerts) -->
+    <fragment
+        android:id="@+id/alertsFragment"
+        android:name="com.edupulse.app.ui.alerts.AlertsFragment"
+        android:label="AlertsFragment"
+        tools:layout="@layout/fragment_alerts">
+        <action
+            android:id="@+id/action_alerts_to_home"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_alerts_to_courseDetail"
+            app:destination="@id/courseDetailFragment" />
+        <action
+            android:id="@+id/action_alerts_to_saved"
+            app:destination="@id/savedFragment" />
+        <action
+            android:id="@+id/action_alerts_to_profile"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_alerts_to_videoPlaylist"
+            app:destination="@id/videoPlaylistFragment" />
+        <action
+            android:id="@+id/action_alerts_to_pdfViewer"
+            app:destination="@id/pdfViewerFragment" />
+    </fragment>
+
+    <!-- Screen 17: Saved & Downloads Manager (Figma Saved) -->
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.edupulse.app.ui.saved.SavedFragment"
+        android:label="SavedFragment"
+        tools:layout="@layout/fragment_saved">
+        <action
+            android:id="@+id/action_saved_to_home"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_saved_to_courseDetail"
+            app:destination="@id/courseDetailFragment" />
+        <action
+            android:id="@+id/action_saved_to_alerts"
+            app:destination="@id/alertsFragment" />
+        <action
+            android:id="@+id/action_saved_to_profile"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_saved_to_videoPlayer"
+            app:destination="@id/videoPlayerFragment" />
+        <action
+            android:id="@+id/action_saved_to_pdfViewer"
+            app:destination="@id/pdfViewerFragment" />
+    </fragment>
+
+    <!-- Screen 18: Student Profile & Analytics (Figma Profile) -->
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.edupulse.app.ui.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_home"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_profile_to_courseDetail"
+            app:destination="@id/courseDetailFragment" />
+        <action
+            android:id="@+id/action_profile_to_saved"
+            app:destination="@id/savedFragment" />
+        <action
+            android:id="@+id/action_profile_to_alerts"
+            app:destination="@id/alertsFragment" />
+        <action
+            android:id="@+id/action_profile_to_pdfViewer"
+            app:destination="@id/pdfViewerFragment" />
+        <action
+            android:id="@+id/action_profile_to_nexusLogin"
+            app:destination="@id/nexusPortalLoginFragment"
+            app:popUpTo="@id/nexusPortalLoginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Screen 19: Book Store Catalog (Orders System Screen 1) -->
+    <fragment
+        android:id="@+id/bookStoreFragment"
+        android:name="com.edupulse.app.ui.book.BookStoreFragment"
+        android:label="BookStoreFragment"
+        tools:layout="@layout/fragment_book_store">
+        <action
+            android:id="@+id/action_bookStore_to_bookOrder"
+            app:destination="@id/bookOrderFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 20: Book Details & Order Form (Orders System Screen 2) -->
+    <fragment
+        android:id="@+id/bookOrderFragment"
+        android:name="com.edupulse.app.ui.book.BookOrderFragment"
+        android:label="BookOrderFragment"
+        tools:layout="@layout/fragment_book_order">
+        <action
+            android:id="@+id/action_bookOrder_to_orderSuccess"
+            app:destination="@id/orderSuccessFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <!-- Screen 21: Order Submitted Successfully (Orders System Screen 3) -->
+    <fragment
+        android:id="@+id/orderSuccessFragment"
+        android:name="com.edupulse.app.ui.book.OrderSuccessFragment"
+        android:label="OrderSuccessFragment"
+        tools:layout="@layout/fragment_order_success">
+        <action
+            android:id="@+id/action_orderSuccess_to_bookStore"
+            app:destination="@id/bookStoreFragment"
+            app:popUpTo="@id/bookStoreFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_orderSuccess_to_home"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

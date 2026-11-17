@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EduPulse</string>
+
+    <!-- General / Global Header -->
+    <string name="language_en">EN</string>
+    <string name="security_ssl_badge">256-Bit SSL Encrypted Campus Authentication</string>
+    <string name="security_ssl_badge_short">256-Bit SSL Encrypted Verification</string>
+    <string name="encrypted_ssl_auth">Encrypted 256-bit SSL Student Authentication</string>
+    <string name="campus_sso_mfa">Campus SSO &amp; Multi-Factor Auth active</string>
+    <string name="nexus_id_version">Nexus ID v4.2</string>
+    <string name="active_term_status">ACTIVE TERM 2024–25 • LIVE CAMPUS SESSION</string>
+    <string name="student_id_preview">ID: STU-84920</string>
+
+    <!-- Screen 1: Nexus Portal Login -->
+    <string name="portal_header_title">Student Portal</string>
+    <string name="portal_header_subtitle">End-to-end encrypted</string>
+    <string name="nexus_portal_badge">Nexus Academy Portal</string>
+    <string name="welcome_back_scholar">Welcome Back, Scholar</string>
+    <string name="welcome_back_scholar_emoji">Welcome Back, Scholar! 👋</string>
+    <string name="portal_auth_desc">Authenticate with your verified student or institutional credentials to access your courses.</string>
+    <string name="edupulse_sign_in_desc">Sign in to access your classes, homework, assignments, and live lectures.</string>
+    <string name="label_email_address">Email Address *</string>
+    <string name="placeholder_email">Enter your registered email</string>
+    <string name="label_password">Password *</string>
+    <string name="placeholder_password">Enter your password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="btn_sign_in">Sign In →</string>
+    <string name="btn_sign_in_portal">Sign In to Portal →</string>
+    <string name="simulate_auth_state">SIMULATE AUTH STATE</string>
+    <string name="simulate_error">Error</string>
+    <string name="simulate_success">Success</string>
+    <string name="new_to_campus_prompt">New to the campus? </string>
+    <string name="sign_up_link">Sign Up</string>
+
+    <!-- Screen 2: EduPulse Scholar Sign-In (Alternative) -->
+    <string name="student_learning_portal_title">Student Learning Portal</string>
+    <string name="student_learning_portal_subtitle">Real-time Academic Hub &amp; Smart LMS • 98% Sync</string>
+    <string name="label_student_full_name">Student Full Name *</string>
+    <string name="placeholder_student_full_name">e.g. Alex Johnson</string>
+    <string name="label_school_name">School Name *</string>
+    <string name="placeholder_school_name">e.g. Apex International Academy</string>
+    <string name="remember_device_30_days">Remember my device for 30 days</string>
+    <string name="remember_device_subtitle">Bypasses two-step code on trusted personal tablets &amp; phones.</string>
+    <string name="or_sign_in_with">OR SIGN IN WITH</string>
+    <string name="google_classroom_account">Google Classroom Account</string>
+    <string name="dont_have_account_prompt">Don\'t have a student account? </string>
+    <string name="register_here_link">Register Here</string>
+
+    <!-- Screen 3: Registration Step 2 -->
+    <string name="upload_passport_photo">Upload passport size photo (Optional)</string>
+    <string name="label_subject">SUBJECT *</string>
+    <string name="label_major_stream">Major stream</string>
+    <string name="value_computer_science">Computer Science</string>
+    <string name="label_grade_class">GRADE / CLASS *</string>
+    <string name="value_class_9">Class 9</string>
+    <string name="label_mobile_number">Mobile Number</string>
+    <string name="label_sms_otp">For SMS OTP</string>
+    <string name="value_demo_phone">+1 (555) 782-9014</string>
+    <string name="status_verified">Verified</string>
+    <string name="terms_acknowledgement">I acknowledge and agree to the School Portal Terms &amp; Conditions and student Privacy Policy.</string>
+    <string name="btn_complete_registration">Complete Registration →</string>
+    <string name="already_have_account_prompt">Already have an account? </string>
+    <string name="sign_in_link">Sign In</string>
+
+    <!-- Screen 4: Verify Your Email -->
+    <string name="edupulse_verification_title">EduPulse VERIFICATION</string>
+    <string name="verify_email_title">Verify Your Email</string>
+    <string name="verify_email_desc">Enter your email address to receive a secure verification link.</string>
+    <string name="label_primary_email">Primary Email *</string>
+    <string name="placeholder_primary_email">Enter your email address</string>
+    <string name="btn_send_email">Send Email →</string>
+    <string name="back_to_login">← Back to Login</string>
+
+    <!-- Screen 5: Verify Your Identity (6-Digit OTP) -->
+    <string name="verify_identity_title">Verify Your Identity</string>
+    <string name="verify_identity_desc">We sent a 6-digit passcode to your registered student address:</string>
+    <string name="demo_masked_email">alex***@school.edu</string>
+    <string name="change_email_phone">Change Email or Phone →</string>
+    <string name="security_code_title">SECURITY CODE</string>
+    <string name="auto_fill_active">Auto-Fill Active</string>
+    <string name="otp_instructions">Tap boxes or use numeric keypad • Instant auto-detect enabled</string>
+    <string name="code_expired_pill">⏱ Code expired</string>
+    <string name="didnt_receive_code">Didn\'t receive code? </string>
+    <string name="resend_otp_link">Resend OTP ↗</string>
+    <string name="btn_verify_activate">Verify &amp; Activate Account →</string>
+    <string name="contact_faculty_helpdesk">🎧 Contact Faculty Helpdesk</string>
+    <string name="try_alternate_method">Try Alternate Method</string>
+    <string name="otp_security_gateway">Secured via Automated SMS &amp; Email Gateway with Rate-Limiting Protection</string>
+
+    <!-- Screen 6: Reset Password -->
+    <string name="reset_password_title">Reset Password</string>
+    <string name="reset_password_desc">Enter your registered Student ID or Email and we\'ll help you securely reset your credentials.</string>
+    <string name="step1_registered_email">1  Registered Email / Student ID</string>
+    <string name="demo_full_email">alex.p@school.edu</string>
+    <string name="found_student_record">Found associated student record: Alex Parker (Grade 11B)</string>
+    <string name="step2_new_password">2  New Password</string>
+    <string name="step3_confirm_new_password">3  Confirm New Password</string>
+    <string name="passwords_match">✓ Passwords match!</string>
+    <string name="btn_reset_password_sign_in">Reset Password &amp; Sign In →</string>
+    <string name="back_to_student_signin">← Back to Student Sign In</string>
+    <string name="trouble_account_prompt">Having trouble with your institutional account?</string>
+    <string name="contact_school_it_helpdesk">Contact School IT Helpdesk</string>
+</resources>
